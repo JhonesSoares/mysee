@@ -25,7 +25,10 @@
 
       {% block content %}{% endblock content %}
 
-    </main> 
+    </main>
+
+    {% include "global/partials/footer.html" %}
+    <script src={% static 'global/js/main.js' %}></script>
     
   </body>
 </html>
