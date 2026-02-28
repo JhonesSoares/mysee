@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    {% load static %}
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="{% static "global/image/favicon.ico" %}" type="image/x-icon" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="{% static 'global/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'global/css/styleLeptop.css' %}" />
+    <link rel="stylesheet" href="{% static 'global/css/styleMobile.css' %}" />
+    <link rel="stylesheet" href="{% static 'global/css/styleTablet.css' %}" />
+
+    <title>{% block title %}{% endblock title %}</title>
+  </head>
+
+  <body>
+    {% include 'global/partials/header.html' %}
+
+    <main class="main">
+
+      {% block content %}{% endblock content %}
+
+    </main> 
+    
+  </body>
+</html>

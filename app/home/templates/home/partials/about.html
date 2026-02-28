@@ -1,0 +1,18 @@
+        <section id="section_container">
+            <div id="div_desc">
+                <h1>SOMOS A <span>MYSEE</span> SEGURANÇA ELETRÔNICA.</h1>
+                <p>Fornecemos serviços de segurança eletrónica e soluções eficientes de qualidade, suprindo suas necessidades para manter seu Veículo, Residência, Empresa ou Negócio em segurança.</p>
+            </div>
+            <div id="div_container">
+                
+                {% for about in abouts %}
+                    <div>
+                        <a href="#">
+                            <img src={{ about.cover.url }} alt="GPS" width="200px">
+                            <p>{{ about.name }}</p>
+                        </a>
+                    </div>
+                {% endfor %}
+                
+            <a href="#"><button>CONHEÇA NOSSOS SERVIÇOS</button></a>   
+        </section>
