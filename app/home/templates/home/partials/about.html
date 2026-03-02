@@ -7,12 +7,12 @@
                 
                 {% for about in abouts %}
                     <div>
-                        <a href="#">
+                        <a href="{% url "home:services" %}">
                             <img src={{ about.cover.url }} alt="GPS" width="200px">
                             <p>{{ about.name }}</p>
                         </a>
                     </div>
                 {% endfor %}
                 
-            <a href="#"><button>CONHEÇA NOSSOS SERVIÇOS</button></a>   
+            <a href="{% url "home:services" %}"><button>CONHEÇA NOSSOS SERVIÇOS</button></a>   
         </section>
